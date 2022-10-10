@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: rgb(61, 60, 60);
+}
+
+.header,
+.footer {
+  min-height: 7rem;
+  padding: 1rem;
+  background-color: #bd83d7;
+}
+
+.main {
+  padding: 1rem;
+  flex: 1 1 auto;
+  background-color: #f7941f;
+}

@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgb(61, 60, 60);
+}
+
+.title {
+  width: 90%;
+  margin: 1rem 0;
+
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.container__item {
+  padding: 1rem;
+}
+
+.item__subtitle {
+  margin: 1rem 0;
+
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.item__paragraph {
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.item__image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container__item {
+    flex: 0 0 50%;
+  }
+
+  .flex-order-1 {
+    order: 1;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+}

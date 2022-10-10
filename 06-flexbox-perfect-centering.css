@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgb(61, 60, 60);
+}
+
+.title {
+  width: 90%;
+  margin: 1rem 0;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #bd83d7;
+}
+
+.subtitle {
+  width: 90%;
+  margin: 0.25rem 0;
+  padding: 1rem 0;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #bd83d7;
+
+  border: 2px solid #bd83d7;
+  border-radius: 5px;
+}
+
+.container {
+  min-width: 80%;
+  min-height: 60%;
+
+  border: 2px solid #bd83d7;
+  border-radius: 5px;
+  background-image: url('https://placeimg.com/1280/720/animals');
+  background-repeat: no-repeat;
+}
+
+.container__subtitle-container {
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
