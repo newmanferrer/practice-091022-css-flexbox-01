@@ -33,6 +33,8 @@ In this case "justify-content" applies to the main axis, and "align-items" to th
 - gap: 5px 10px; (shorthand of row-gap and column-gap)
 - gap: 5px; (apply the same values "5px" for row-gap and column-gap)
 
+<span style="color: #f7941f">Important note:</span> The "justify-items" property, does not apply for css flexbox.
+
 ## Items (flex items). Properties for the Children
 
 - order: 0; (Default is zero, accepts negatives and positives, the lowest value will be placed first)
